@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="author" content="Hannah Nixon">
-    <meta name="description" content="website for the goodwin inn location in the swiss alps. book a stay, find locations and contact information here.">
-    <title>Goodwin Inn</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="description" content="copntact page for the goodwin inn located in the swiss alps.">
+    <title>Goodwin Inn | Contact</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="iage/x-icon">
   </head>
 
   <body>
-     <header>
+     <header class="header-container">
     <h1>Goodwin Inn</h1>
     <nav>
     <ul>
@@ -22,7 +22,43 @@
   </header>
 
     <main>
-     </main>
+    <div class="contact-container">
+    <div class="items">
+    <h2>Contact Us</h2>
+    <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+<img src="image/swiss-peak.jpg" width="350" height="455" alt="view of a snowy swiss peak with green trees and a river flowing.">    
+</div>
+<div class="items">
+<form action="/submit-data" method="post">
+   <div class="gap">
+        <label for="name">Full Name*</label>
+        <input type="text" id="name" name="user_name">
+    </div>
+    <div class="gap">
+        <label for="email">Email Address*</label>
+        <input type="text" id="email" name="user_email">
+    </div>
+    <div class="gap">
+    <label for="phone">Phone Number*</label>
+    <input type="text" id="phone" name="user_phone">
+    </div>
+    <div class="gap">
+    <p>Preferred Contact method*</p>
+    <label for="emails">email<input type="checkbox" name="emails" value="A" id="emails"></label>
+    <label for="phones">phone number<input type="checkbox" name="phones" value="B" id="phones"></label>
+
+    </div>
+    <div class="gap">
+        <label for="comments">Comments*</label>
+        <input type="text" id="comments" name="user_comments">
+    </div>
+    <div class="button">
+    <button type="submit">Submit</button>
+    </div>
+</form>
+ </div>
+</div>
+</main>
  <footer>
 <p>Copyright ©2023 Goodwin Inn.</p>
 <p>This site is for educational purposes only</p>

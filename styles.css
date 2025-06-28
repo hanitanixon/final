@@ -1,0 +1,92 @@
+:root{
+--Lt-blue: #C9E3F7;
+--Dk-blue: #476787;
+--gray: #495F5C;
+--white: #fff;
+--black: #000000;
+
+--font: 'times','sans-serif''cursive';
+width: 1440;
+}
+
+body{
+
+    background-color: var(--Lt-blue);
+   min-height: 100vh; /* Ensure body takes at least full viewport height */
+}
+
+.header-container{
+  background-image: url(image/swiss-valley.jpg); /* Replace with the actual image path */
+   height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav{
+    width: 50%;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0;
+    margin: 1em 0;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.h2-index{
+text-align: center;
+}
+
+
+.content-container{
+display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+  flex-wrap: wrap; /* Allow items to wrap to new rows */
+  height: 200px; /* Set a fixed height to trigger wrapping */
+text-align: center;
+}
+
+.item {
+  /* Add styling for your content items */
+  width: 48%; /* Adjust width for desired arrangement */
+  margin-bottom: 10px; /* Add spacing between rows */
+}
+
+.contact-container{
+display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+  flex-wrap: wrap; /* Allow items to wrap to new rows */
+  height: 200px; /* Set a fixed height to trigger wrapping */
+text-align: center;
+}
+
+.contact-container h2{
+text-align: left;
+padding-left: 3.2cm;
+}
+
+.gap{
+padding: 20px;
+}
+
+form{
+margin-top: 70px;
+}
+
+button:hover{
+background-color: var(--Dk-blue);
+}
+
+footer {
+margin-top: 30em;
+text-align: center;
+}
